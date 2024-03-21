@@ -4,38 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>G-Leja</title>
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/e79d385cc4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>G-LEJA</title>
 </head>
 <body>
-    <header>
-        <h1><span class="l-h1">G-</span><span class="r-h1">Leja</span></h1>
-        <nav>
-            <a href="#premium">Premium</a>
-            <a href="#how-it-works">How it works</a>
-            <a href="#faq">FAQ</a>
-            <a hraf="#sign-in">Sign in</a>
-        </nav>
-        </header>
+    <nav>
+        <!-- Side-bar menu for small screens-->
+        <ul class="sidebar">
+            <li style="padding: 0;" onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" fill="#ff750f"/></svg></a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#sign-in">Sign in</a></li>
+            <li><a href="#premium">Premium</a></li>
+        </ul>
 
-        <section class="main-content">
-            <h2></h2>
-            <h2 style="font-size: 70px; margin: 0px; font-weight:bold;">Manage,</h2>
-            <h2 style="font-size: 100px; margin: 0px; font-weight:bold;">Track,</h2>
-            <h2 style="font-size: 120px; margin: 0px; ">Thrive.</h2>
+        <!-- Desktop version menu -->
+        <ul>
+            <li><a href="#home"><h1><span class="l-h1">G-</span><span class="r-h1">Leja</span></h1></a></li>
+            <li><a class="nav-list" href="#premium">Premium</a></li>
+            <li><a class="nav-list" href="#how-it-works">How it works</a></li>
+            <li><a class="nav-list" href="#faq">FAQ</a></li>
+            <li><a class="nav-list" href="#sign-in">Sign in</a></li>
+            <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" fill="#ff750f"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <section class="main-content">
+        <div class="left-content" >
+            <h2>Manage,</h2>
+            <h2 style="font-size: 60px; margin: 0px; font-weight:bold;">Track,</h2>
+            <h2 style="font-size: 70px; margin: 0px; ">Thrive.</h2>
             <button class="gs">Get Started</button>
             <button class="si">Sign in</button>
-            <p style="width: 250px;">Organize your finances. Sign up for free today</p>
-            <b img src="image.jpg" alt="girl illustration"> <center=image.jpg</center>
-        </section>
+            <p class="section-p">Organize your finances. Sign up for free today</p>
+        </div>
+        <div >
+            <img  class="right-content" src="img/img.png" alt="home image">
+        </div>
+    </section>
 
-        <footer>
-            <div class="social-icons">
-                <a href="#"><img src="path_to_twitter_logo" alt="Twitter"></a>
-                <a href="#"><img src="path_to_instagram_logo" alt="Instagram"></a>
-                <a href="#"><img src="path_to_facebook_logo" alt="Facebook"></a>
-            </div>
-            <p>&copy; Copyright 2024. T & C apply</p>
+    <footer>
+        <p>&copy; Copyright 2024. T & C apply</p>
+        <div>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
         </footer>
-           
-    </body>
-    </html>
+</body>
+</html>
