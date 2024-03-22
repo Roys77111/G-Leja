@@ -6,10 +6,8 @@ body {
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-
 }
 nav ul {
-    /* position: fixed; */
     width: 100%;
     list-style: none;
     display: flex;
@@ -168,6 +166,19 @@ footer i {
 .section-p {
     width: 300px;
    }
+
+   nav li:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 117, 15, 0.2);
+    z-index: -1;
+}
+
+
 
 
 @media (max-width: 868px){
