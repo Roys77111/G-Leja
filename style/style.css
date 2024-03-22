@@ -191,6 +191,7 @@ footer i {
    }
    .main-content {
     display: grid;
+    padding-top: 70px;
    }
    .section-p {
     width: 100%;
@@ -202,7 +203,16 @@ footer i {
    .right-content {
     margin-left: -70px;
    }
+   nav li:first-child {
+    padding: 0;
+   }
+   footer {
+    display: block;
+    padding: 20px;
+    margin-left: 5px;
+   }
 }
+
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
