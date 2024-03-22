@@ -6,6 +6,8 @@ body {
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
+    background-color: rgba(255, 117, 15, 0.2);
+
 }
 nav ul {
     width: 100%;
@@ -147,7 +149,8 @@ footer {
     align-items: center;
     padding: 20px 70px; 
     color: #ff750f;
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    background-color: #522504;
 }
 
 footer p {
@@ -165,21 +168,7 @@ footer i {
 
 .section-p {
     width: 300px;
-   }
-
-   nav li:first-child::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 117, 15, 0.2);
-    z-index: -1;
 }
-
-
-
 
 @media (max-width: 868px){
    .nav-list {
@@ -209,7 +198,7 @@ footer i {
    footer {
     display: block;
     padding: 20px;
-    margin-left: 5px;
+    margin-left: 0;
    }
 }
 
